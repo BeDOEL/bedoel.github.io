@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS yang dibuat sendiri */
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #c2c2c2;
+}
+::-webkit-scrollbar-thumb {
+    background: #126139;
+}
+
+body {
+    background-image: url('img/mainbg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+
+    background-color: #171717;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px 10px 10px 10px;
+}
+.container .header {
+    background-color: #126139;
+    padding: 20px 25px;
+    border-radius: 10px 10px 0px 0px;
+}
+.container .header h1 {
+    text-align: center;
+    color: #c5ccc8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.container .salah {
+    margin: 20px 0 0 20px;
+}
+.container .salah p {
+    color: red;
+    font-style: italic;
+}
+.container .main {
+    margin: 20px 25px;
+}
+.container .main .menu label {
+    text-align: left;
+    color: #c5ccc8;
+    font-size: 18px;
+}
+.container .main .menu input {
+    width: calc(100%);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #126139;
+    font-size: 15px;
+    color: #c5ccc8;
+    outline: 0;
+}
+.container .main .menu select {
+    width: calc(100%);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #126139;
+    font-size: 15px;
+    color: #c5ccc8;
+    outline: 0;
+}
+.container .main .remember {
+    color: #c5ccc8;
+    padding-bottom: 10px;
+    font-size: 14px;
+    transform: scale(0.8, 0.8);
+    float: left;
+}
+
+.container .main .button button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #126139;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #c5ccc8;
+}
+.container .main .registrasi {
+    margin: 20px 0 0 0;
+}
+.container .main .registrasi p {
+    color: #c5ccc8;
+    font-size: 13px;
+    text-align: center;
+}
+.container .main .registrasi p a {
+    text-decoration: none;
+    color: #126139;
+}
+.container .main .registrasi p a:hover {
+    color: #89c541;
+}
+
+.container .main .login {
+    margin: 20px 0 0 0;
+}
+.container .main .login p {
+    color: #c5ccc8;
+    font-size: 13px;
+    text-align: center;
+}
+.container .main .login p a {
+    text-decoration: none;
+    color: #126139;
+}
+.container .main .login p a:hover {
+    color: #89c541;
+}
+
+
+.footer {
+    background-color: #126139;
+    padding: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.footer .copy {
+    color: white;
+    text-shadow: 2px 1px 4px black;
+    text-align: center;
+    font-size: 12px;
+    
+}
+

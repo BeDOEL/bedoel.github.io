@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS yang dibuat sendiri */
+
+/* Costume Scrollbar */
+body::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #c2c2c2;
+}
+::-webkit-scrollbar-thumb {
+    background: #126139;
+}
+
+.header {
+    background-color: #126139;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.awal {
+    background-color: #101010;
+    width: 900px;
+    margin: auto;
+    overflow: auto;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.search {
+    width: 600px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.search input {
+    width: calc(600px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #126139;
+    font-size: 15px;
+    color: #c5ccc8;
+    outline: 0;
+}
+.video {
+    float: left;
+    margin-right: 10px;
+}
+.main-background {
+    background-image: url('img/mainbg.png');
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.conte-content {
+    width: 900px;
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+}
+.content-left {
+    background-color: #171717;
+    width: 600px;
+    margin: 45px 10px 0px 0px;
+    padding: 30px 0px 5px 20px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
+}
+.sub-content {
+    background-color: #1d1d1d;
+    box-shadow: 0px 0px 10px #0e0c0c;
+    width: 560px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0px auto 20px auto;
+    padding: 0px 0px 10px 0px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
+}
+.sub-content .sub-content-judul{
+    background-color: #126139;
+    width: 560px;
+}
+.sub-content .sub-content-judul .nav-edithapus {
+    width: 560px;
+}
+.sub-content .sub-content-judul .nav-edithapus a {
+    float: left;
+    text-decoration: none;
+    width: 280px;
+    box-sizing: border-box;
+    padding: 10px 150px 10px 130px;
+}
+.sub-content .sub-content-judul .nav-edithapus a:hover {
+    color: #126139;
+    background-color: #c2c2c2;
+}
+.sub-content .sub-content-judul {
+
+    margin: 0px 0px 10px 0px;
+}
+.sub-content .sub-content-judul .linked {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'cooper black';
+}
+.sub-content .sub-content-judul .linked:hover {
+    color: black;
+    text-shadow: 0px 0px 5px rgba(150,205,106,255);
+}
+.sub-content .sub-judul {
+    font-size: 30px;
+    color: #c5ccc8;
+    text-shadow: 2px 1px 4px black;
+}
+.sub-content .sub-content-content {
+    margin: 10px 15px 0px 15px;
+    color: #c5ccc8;
+    text-shadow: 2px 1px 4px black;
+}
+
+.sub-content .sub-content-judul .bar-judul {
+    padding: 10px 10px 5px 10px;
+}
+
+.content-right {
+    background-color: #171717;
+    width: 270px;
+    margin: 45px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+}
+.contecredit {
+    background-color: #171717;
+    width: 270px;
+    margin: 80px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
+}
+.content-right .fbcss {
+    background-color: #144587;
+}
+.content-right .igcss {
+    background-color: #a72a9b;
+    margin-top: 10px;
+}
+.content-right .ytcss {
+    background-color: #fe0000;
+    margin-top: 10px;
+}
+.content-right .fbcss img {
+    float: left;
+}
+.content-right .fbcss p {
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'cooper black';
+    font-size: 23px;
+    color: #c5ccc8;
+}
+.content-right .fbcss a {
+    text-decoration: none;
+}
+.content-right .igcss img {
+    float: left;
+}
+.content-right .igcss p {
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'cooper black';
+    font-size: 23px;
+    color: #c5ccc8;
+}
+.content-right .igcss a {
+    text-decoration: none;
+}
+.content-right .ytcss p {
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'cooper black';
+    font-size: 23px;
+    color: #c5ccc8
+}
+.content-right .ytcss a {
+    box-sizing: border-box;
+}
+.bg3 ul li{
+    color: #c5ccc8;
+    text-shadow: 2px 1px 4px black;
+}
+.bg3 .subjudul {
+    font-size: 30px;
+    color: #c5ccc8;
+    text-shadow: 2px 1px 4px black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* .bg4 {
+    background-color: red;
+    margin-left: 50px;
+    margin-right: 50px;
+} */
+.logout {
+    float: right;
+}
+.judulweb {
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 2px 1px 4px black;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.footer {
+    background-color: #126139;
+    padding: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+.footer .copy {
+    color: white;
+    text-shadow: 2px 1px 4px black;
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+.navigasi ul a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    height: 20px;
+    display: block;
+    background-color: #126139;
+}
+.navigasi ul a:hover {
+    color: #126139;
+    background-color: #c2c2c2;
+}
+.navigasi .ataslengkung {
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+
+
+/* Clear Fix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
